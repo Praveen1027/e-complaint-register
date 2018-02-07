@@ -1,0 +1,1 @@
+web: gunicorn inspiron.wsgi —-log-file -

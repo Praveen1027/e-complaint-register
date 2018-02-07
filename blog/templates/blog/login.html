@@ -1,0 +1,21 @@
+
+<div class="container">
+
+
+<style type="text/css">
+body{
+
+	background-image: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fsterlingeducation.co.in%2Fwp-content%2Fuploads%2F2017%2F09%2Fkhan-academy_new.jpg&f=1");
+}	
+
+</style>
+{% block content %}
+  <h2 style="color: white;">Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-bsp-primary" type="submit">Login</button>
+  </form>
+{% endblock %}
+
+</div>
